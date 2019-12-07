@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-buttons slot="start" defaultHref="/tabs/films">
+    <ion-buttons slot="start" defaultHref="/tabs/(films:films)">
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>{{ film?.title }}</ion-title>
@@ -14,5 +14,7 @@
       {{ film.opening_crawl }}
     </ion-card-content>
   </ion-card>
+
+  <ion-button expand="full" (click)="shareFilm()">Share by Email</ion-button>
 
 </ion-content>
